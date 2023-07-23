@@ -5,7 +5,7 @@ body{
   }
   
   .container {
-      background-color:antiquewhite;
+     
       width: 90%;
       max-width: 1000px;
       margin: auto;
@@ -15,12 +15,15 @@ body{
       flex-wrap: wrap;
   
   }
+
+
   #encabezado{
-      background-color: #00425a;
+      background-color: #fc7300;
       width:100%;
       padding: 20px;
       border-radius: 20px;
-      color:#eff5f5;
+      color:#00425a;
+      margin-bottom: 20px; /*hago espacion ente esta caja y la siguiente*/
       /*Flex*/
       display: flex;
       justify-content: space-between;/*los elementos se situan uno a la izq. y el otro a la derecha*/
@@ -31,7 +34,7 @@ body{
   
   }
   #menu a{
-      color: #eff5f5;
+      color: #00425a;
       text-decoration: none;
   }
   
@@ -89,11 +92,12 @@ body{
    .title{
       font-size: 24px;
       font-weight: bold;
-      margin-bottom: 50px;
+      margin-bottom: 20px;
       margin-top: 10px;
-      margin-left: 10px;
+     
       background-color: #1f8a70;
       width: 100%;
+      border-radius: 10px;
      
    }
    .titles{
@@ -105,12 +109,13 @@ body{
    }
    .small{
       flex:1;
-      padding: 10px;
+      padding: 30px;
       background-color:#fc7300;
       border: 1px solid #00425a;
       border-radius: 20px;
       text-align: center;
-      margin: 0 5px;
+      margin: 0 15px;
+      margin-top: 60px; 
    }
    
    @media (max-width: 768px) {
@@ -145,6 +150,7 @@ body{
     font-weight: bold;
     margin-bottom: 10px;
     background-color: #1f8a70;
+    border-radius: 10px;
   }
   
   .noticias-content {
