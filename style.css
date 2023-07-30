@@ -15,8 +15,7 @@ body{
       flex-wrap: wrap;
   
   }
-
-
+  
   #encabezado{
       background-color: #fc7300;
       width:100%;
@@ -24,6 +23,7 @@ body{
       border-radius: 20px;
       color:#00425a;
       margin-bottom: 20px; /*hago espacion ente esta caja y la siguiente*/
+      
       /*Flex*/
       display: flex;
       justify-content: space-between;/*los elementos se situan uno a la izq. y el otro a la derecha*/
@@ -36,17 +36,19 @@ body{
   #menu a{
       color: #00425a;
       text-decoration: none;
+      @media (max-width: 768px){
+        grid-template-columns: 1 fr;
+    }
   }
   
   footer{
       display:flex;
       flex-direction: row;
       width: 100%; /* para que abarque todo el documento */
-      margin: 50px;
-      padding: 20px;
+      margin: 10px;
+      
       justify-content: space-between; /*los elementos se situan uno a la izq. y el otro a la derecha*/
       align-items: center; /*centralizamos verticalmente*/
-  
   
       flex-direction: row; /*con direction y con wrap logro que cuando se achique la pant. se pongan una debajo del otro*/
       flex-wrap: wrap;
@@ -57,7 +59,7 @@ body{
       grid-template-columns: 1fr 5fr;
       gap: 30px;
       
-      @media (max-width: 768px){
+     @media (max-width: 768px){
           grid-template-columns: 1 fr;
       }
    }   
@@ -69,7 +71,7 @@ body{
      
     img {
       width: 400px;
-      height: auto;
+      height:auto;
     }
       
   .text{
@@ -121,6 +123,7 @@ body{
    @media (max-width: 768px) {
       .propuesta {
         padding: 10px; /* Reducimos el espacio interno en dispositivos pequeños */
+        grid-template-columns: 1 fr;
       }
     
       .title {
@@ -183,7 +186,7 @@ body{
 .footer {
     background-color: #00425a;
     color: #eff5f5;
-    padding: 20px;
+    padding: 15px;
     border-radius: 20px;
     text-align: left;
     display: flex;
